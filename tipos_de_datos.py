@@ -171,7 +171,7 @@ var3 = apellidos_set3.issubset(apellidos_set1)
 del 0 al 4 de la lista `apellidos_lista`.
 """
 
-apellidos_dict = dict.fromkeys(apellidos_list[0:4])
+apellidos_dict = dict.fromkeys(apellidos_list[0:5])
 
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
@@ -188,14 +188,11 @@ apellidos_dict['gonzalez'] = 34
 """Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_gonzalez`.
 """
-
-apellido_gonzalez = apellidos_dict.get('gonzalez')
-print(apellido_gonzalez)
+apellido_gonzalez = apellidos_dict.pop('gonzalez')
 
 """Eliminar el último elemento del diccionario `apellidos_dict`.
 """
-
-apellidos_dict.pop()
+apellidos_dict.popitem()
 
 """Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
