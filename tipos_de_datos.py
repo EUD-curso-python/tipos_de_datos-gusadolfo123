@@ -99,22 +99,24 @@ apellidos_list2.pop(4)
 """Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
 """
 
-apellidos_list2.remove(" MORALEZ")
-print(apellidos_list2)
+apellidos_list2.remove('  MORALES')
 
 """Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del
 elemento 56 al 70 de la variable `apellidos_list`.
 """
 
+apellidos_list2 = apellidos_list2 + apellidos_list[56:71]
 
 """Invertir el orden actual de la variable `apellidos_list2`.
 """
 
+apellidos_list2.reverse()
 
 """Crear variable `apellidos_set1` con los elementos del 56 al 66 de la 
 variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del 
 62 al 76 de la variable `apellidos_list`.
 """
+
 
 
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
