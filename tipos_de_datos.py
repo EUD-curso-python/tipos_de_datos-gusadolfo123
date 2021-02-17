@@ -75,27 +75,32 @@ termina con el string `"ez"`.
 """
 
 apellido_end_ez = apellido2.count('ez')
-print(apellido_end_ez)
 
 """Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
 
+apellidos_tuple = tuple(apellidos_list[49:22:-2])
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
 posición 78 de la lista `apellidos_list`.
 """
 
+apellidos_list2 = list(apellidos_tuple)
+apellidos_list2.append(apellidos_list[78])
 
 """Eliminar el 4 elemento de la variable `apellidos_list2`.
 """
 
+apellidos_list2.pop(4)
 
 """Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
 """
 
+apellidos_list2.remove(" MORALEZ")
+print(apellidos_list2)
 
 """Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del
 elemento 56 al 70 de la variable `apellidos_list`.
